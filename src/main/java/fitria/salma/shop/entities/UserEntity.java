@@ -21,6 +21,9 @@ public class UserEntity extends BaseProperties {
 	
 	@Column
 	private String password;
+	
+	@Column
+	private Boolean is_admin;
 
 	public Long getId() {
 		return id;
@@ -45,6 +48,15 @@ public class UserEntity extends BaseProperties {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public Boolean getIs_admin() {
+		return is_admin;
+	}
+
+	public void setIs_admin(Boolean is_admin) {
+		this.is_admin = is_admin;
+	}
+	
 	
 	
 }

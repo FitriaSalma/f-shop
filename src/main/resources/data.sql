@@ -1,5 +1,5 @@
-INSERT INTO m_user (username, password, created_by, created_on)
-VALUES ('admin', 'Admin#123', 1, now());
+INSERT INTO m_user (username, password, is_admin, created_by, created_on)
+VALUES ('admin', 'Admin#123', true, 1, now());
 
 Insert into product_category (category_name, created_by, created_on)
 values
